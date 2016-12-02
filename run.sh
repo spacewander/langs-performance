@@ -144,6 +144,10 @@ rm -f ${JF1}.class ${JF2}.class ${JF3}.class
 C='node'   ; SRC='primes.js' ; run_benchmark 'JavaScript (nodejs)' 'true' "$C $SRC" "$C -v" 'cat' "$SRC"
 C='nodejs' ; SRC='primes.js' ; run_benchmark 'JavaScript (nodejs)' 'true' "$C $SRC" "$C -v" 'cat' "$SRC"
 
+## 
+
+C='luajit' ; SRC='primes.lua' ; run_benchmark 'Luajit' 'true' "$C $SRC" "$C -v" 'cat' "$SRC"
+
 ##
 
 C='ruby' ; SRC='primes.rb' ; run_benchmark 'Ruby' 'true' "$C $SRC" "$C -v" 'cat' "$SRC"
